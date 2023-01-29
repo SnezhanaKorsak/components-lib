@@ -1,10 +1,15 @@
 import React from 'react';
-import './App.css';
+
+import Menu from './components/Menu';
+
+import styles from './App.module.scss';
+import RoutesSwitch from './components/Routes';
 
 function App() {
   return (
-    <div className="App">
-         Initial
+    <div className={styles.appWrapper}>
+      <Menu/>
+      <RoutesSwitch/>
     </div>
   );
 }

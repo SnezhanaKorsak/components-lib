@@ -1,0 +1,49 @@
+.burgerIcon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 18px;
+    position: fixed;
+    z-index: 2;
+    background: #111111;
+    cursor: pointer;
+}
+
+.burger:before,
+.burger:after {
+    content: '';
+}
+
+.burger,
+.burger:before,
+.burger:after {
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: calc(50% - 1px);
+    background: #f2f2f2;
+    transition: all .3s ease;
+}
+
+.burger:before {
+    top: -6px;
+}
+
+.burger:after {
+    top: 7px;
+}
+
+#menu:checked + .burgerIcon .burger:after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu:checked + .burgerIcon .burger:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#menu:checked + .burgerIcon .burger {
+   background-color: transparent;
+}
