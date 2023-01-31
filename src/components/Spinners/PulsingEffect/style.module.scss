@@ -1,0 +1,34 @@
+@import '../../../sass/variables';
+
+@keyframes pulse {
+  0% {
+    box-shadow: $pure 0 0 0 0;
+  }
+  75% {
+    box-shadow: $pureShadow 0 0 0 16px;
+  }
+}
+
+.wrapper {
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+
+  h2 {
+    font-family: $headerFont;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .pulse {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: $pure;
+    animation: pulse 1500ms infinite;
+  }
+}
+

@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
 
 import { faCircleDot } from '@fortawesome/free-regular-svg-icons/faCircleDot';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons/faBriefcase';
-import { faBrush } from '@fortawesome/free-solid-svg-icons/faBrush';
+import { faBriefcase, faBrush, faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 import BurgerMenu from '../Buttons/BurgerMenu';
 
@@ -28,6 +27,12 @@ const Menu = () => {
             <NavLink to={Path.Buttons}>
               <FontAwesomeIcon className={styles.icon} icon={faCircleDot}/>
               Buttons
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={Path.Spinners}>
+              <FontAwesomeIcon className={styles.icon} icon={faSpinner}/>
+              Spinners
             </NavLink>
           </li>
           <li>
