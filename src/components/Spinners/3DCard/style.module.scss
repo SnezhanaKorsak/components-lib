@@ -1,0 +1,36 @@
+@import '../../../sass/variables';
+
+@keyframes spin {
+  0% {
+    transform: perspective(100px) rotateX(0deg);
+  }
+  50% {
+    transform: perspective(100px) rotateX(180deg);
+  }
+  100% {
+    transform: perspective(100px) rotateZ(180deg);
+  }
+}
+
+.wrapper {
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+
+  h2 {
+    font-family: $headerFont;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .spinner {
+    height: 24px;
+    width: 24px;
+    background-color: $pure;
+    animation: spin 2s linear infinite;
+  }
+}
+
