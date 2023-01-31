@@ -1,0 +1,23 @@
+@import '../../sass/mixins';
+@import '../../sass/variables';
+
+.container {
+  @include container;
+
+ .info {
+   display: flex;
+
+   select {
+     width: 150px;
+     outline: none;
+     margin-right: 15px;
+   }
+
+   .description {
+     width: auto;
+     padding: 0 5px;
+     background-color: white;
+     color: #111111;
+   }
+ }
+}

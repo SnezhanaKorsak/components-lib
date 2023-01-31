@@ -1,7 +1,7 @@
 import React from 'react';
 import Pulsing from './PulsingEffect';
 
-import styles from '../Buttons/style.module.scss';
+import styles from './style.module.scss';
 
 const SpinnersPage = () => {
   return (

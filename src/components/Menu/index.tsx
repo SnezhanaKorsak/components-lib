@@ -1,15 +1,23 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NavLink } from 'react-router-dom';
 
 import { faCircleDot } from '@fortawesome/free-regular-svg-icons/faCircleDot';
-import { faBriefcase, faBrush, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faBrush, faSpinner, faGear } from '@fortawesome/free-solid-svg-icons';
 
 import BurgerMenu from '../Buttons/BurgerMenu';
+import MenuItem from './MenuItem';
 
 import { Path } from '../../constants';
 
-import styles from './style.module.scss'
+import styles from './style.module.scss';
+
+
+const menuListData = [
+  { title: 'Buttons', path: Path.Buttons, icon: faCircleDot },
+  { title: 'Spinners', path: Path.Spinners, icon: faSpinner },
+  { title: 'Properties', path: Path.Properties, icon: faGear },
+  { title: 'Gradients', path: Path.Gradients, icon: faBrush },
+  { title: 'Other', path: Path.Other, icon: faBriefcase },
+]
 
 const Menu = () => {
   const [isOpened, setIsOpened] = useState(true)
@@ -23,30 +31,10 @@ const Menu = () => {
       <BurgerMenu onClick={onClickHandler}/>
       <nav className={styles.nav}>
         <ul>
-          <li>
-            <NavLink to={Path.Buttons}>
-              <FontAwesomeIcon className={styles.icon} icon={faCircleDot}/>
-              Buttons
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={Path.Spinners}>
-              <FontAwesomeIcon className={styles.icon} icon={faSpinner}/>
-              Spinners
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={Path.Properties}>
-              <FontAwesomeIcon className={styles.icon} icon={faBrush}/>
-             Css Properties
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={Path.Other}>
-              <FontAwesomeIcon className={styles.icon} icon={faBriefcase}/>
-              Other
-            </NavLink>
-          </li>
+          {menuListData.map(({ title, icon, path }, index) =>
+            <li key={index}>
+              <MenuItem icon={icon} path={path} title={title}/>
+            </li>)}
         </ul>
       </nav>
     </div>
