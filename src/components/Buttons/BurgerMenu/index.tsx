@@ -2,11 +2,11 @@ import React, { useState, MouseEvent } from 'react';
 
 import styles from './style.module.css'
 
-type BurgerMenu = {
+type BurgerMenuProps = {
   onClick: (value: boolean) => void
 }
 
-const BurgerMenu: React.FC<BurgerMenu> = ({ onClick }) => {
+const BurgerMenu: React.FC<BurgerMenuProps> = ({ onClick }) => {
   const [isChecked, setIsChecked] = useState(true)
 
   const onClickHandler = (event: MouseEvent<HTMLInputElement>) => onClick(event.currentTarget.checked)

@@ -1,0 +1,5 @@
+@import '../../sass/mixins';
+
+.container {
+  @include container;
+}
