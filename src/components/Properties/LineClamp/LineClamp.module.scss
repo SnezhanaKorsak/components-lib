@@ -1,0 +1,49 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins';
+
+.header {
+  @include header;
+}
+
+.content {
+  @include content;;
+
+  .description {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .example1 {
+    color: $negative;
+    margin-bottom: 10px;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .column {
+      max-width: 300px;
+      color: $white;
+    }
+  }
+
+  .example2 {
+    color: $positive;
+    margin-bottom: 10px;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .column {
+      width: 300px;
+      color: $white;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+  }
+}

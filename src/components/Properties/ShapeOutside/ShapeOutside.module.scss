@@ -1,0 +1,27 @@
+@import '../../../sass/mixins';
+@import '../../../sass/variables';
+
+.header {
+  @include header;
+}
+
+.content {
+  @include content;
+
+  .description {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .example {
+
+    .element {
+      float: left;
+      shape-outside: circle(50%);
+      width: 100px;
+      height: 100px;
+      opacity: .2;
+    }
+
+  }
+}

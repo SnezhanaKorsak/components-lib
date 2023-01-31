@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import { faCircleDot } from '@fortawesome/free-regular-svg-icons/faCircleDot';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons/faBriefcase';
+import { faBrush } from '@fortawesome/free-solid-svg-icons/faBrush';
 
 import BurgerMenu from '../Buttons/BurgerMenu';
 
@@ -30,8 +31,13 @@ const Menu = () => {
             </NavLink>
           </li>
           <li>
+            <NavLink to={Path.Properties}>
+              <FontAwesomeIcon className={styles.icon} icon={faBrush}/>
+             Css Properties
+            </NavLink>
+          </li>
+          <li>
             <NavLink to={Path.Other}>
-
               <FontAwesomeIcon className={styles.icon} icon={faBriefcase}/>
               Other
             </NavLink>

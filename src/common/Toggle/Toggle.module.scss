@@ -1,0 +1,10 @@
+.iconClose {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.iconOpen {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: rotate(90deg);
+}
