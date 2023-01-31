@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faPlay } from '@fortawesome/free-solid-svg-icons/faPlay';
 
-import styles from './Toggle.module.scss';
+import styles from './style.module.scss';
 
 type ToggleProps = {
   isHidden: boolean

@@ -2,7 +2,7 @@ import React from 'react';
 
 import LineClamp from './LineClamp';
 
-import styles from '../Buttons/ButtonsPage.module.scss';
+import styles from '../Buttons/style.module.scss';
 import ShapeOutside from './ShapeOutside';
 import TextStroke from './TextStroke';
 

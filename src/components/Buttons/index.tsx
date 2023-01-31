@@ -1,11 +1,11 @@
 import React from 'react';
+import SocialButtonsWithPopupEffect from './SocialButtonsWithPopupEffect';
 
-import styles from './ButtonsPage.module.scss'
-
+import styles from './style.module.scss'
 
 const ButtonsPage = () => {
   return <div className={styles.container}>
-   <div className={styles.block}>Button 1</div>
+    <SocialButtonsWithPopupEffect/>
   </div>
 }
 

@@ -1,6 +1,6 @@
 import React, { useState, MouseEvent } from 'react';
 
-import styles from './BurgerMenu.module.css'
+import styles from './style.module.css'
 
 type BurgerMenu = {
   onClick: (value: boolean) => void

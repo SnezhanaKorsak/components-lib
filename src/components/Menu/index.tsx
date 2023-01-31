@@ -10,7 +10,7 @@ import BurgerMenu from '../Buttons/BurgerMenu';
 
 import { Path } from '../../constants';
 
-import styles from './Menu.module.scss'
+import styles from './style.module.scss'
 
 const Menu = () => {
   const [isOpened, setIsOpened] = useState(true)

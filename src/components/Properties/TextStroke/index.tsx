@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Toggle from '../../../common/Toggle';
 
-import styles from './TextStroke.module.scss';
+import styles from './style.module.scss';
 
 
 const TextStroke = () => {

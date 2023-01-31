@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import styles from './LineClamp.module.scss'
+import styles from './style.module.scss'
 import Toggle from '../../../common/Toggle';
 
 const LineClamp = () => {
