@@ -5,47 +5,23 @@ import { faFacebookF, faTwitter, faInstagram, faGithub, faYoutube } from '@forta
 
 import styles from './style.module.scss'
 
+const icons = [faFacebookF, faTwitter, faInstagram, faGithub, faYoutube]
+
 const SocialButtonsWithPopupEffect = () => {
   return (
     <React.Fragment>
-      <h2>Social Buttons with popup effect</h2>
-
       <div className={styles.wrapper}>
+        <h2>Social Buttons with popup effect</h2>
 
-        <div className={styles.iconBlock}>
-          <div className={styles.tooltip}>Facebook</div>
-          <span>
-          <FontAwesomeIcon icon={faFacebookF} className={styles.icon}/>
-        </span>
+        <div className={styles.container}>
+          {icons.map(icon =>
+              <div className={styles.iconBlock}>
+                <div className={styles.tooltip}>Facebook</div>
+                <span><FontAwesomeIcon icon={icon} className={styles.icon}/></span>
+              </div>
+          )}
         </div>
 
-        <div className={styles.iconBlock}>
-          <div className={styles.tooltip}>Instagram</div>
-          <span>
-          <FontAwesomeIcon icon={faTwitter} className={styles.icon}/>
-        </span>
-        </div>
-
-        <div className={styles.iconBlock}>
-          <div className={styles.tooltip}>Twitter</div>
-          <span>
-          <FontAwesomeIcon icon={faInstagram} className={styles.icon}/>
-        </span>
-        </div>
-
-        <div className={styles.iconBlock}>
-          <div className={styles.tooltip}>GitHub</div>
-          <span>
-          <FontAwesomeIcon icon={faGithub} className={styles.icon}/>
-        </span>
-        </div>
-
-        <div className={styles.iconBlock}>
-          <div className={styles.tooltip} >Youtube</div>
-          <span>
-          <FontAwesomeIcon icon={faYoutube} className={styles.icon}/>
-        </span>
-        </div>
       </div>
     </React.Fragment>
   );
