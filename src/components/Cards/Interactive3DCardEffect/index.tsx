@@ -41,5 +41,3 @@ const Interactive3DCardEffect = () => {
 };
 
 export default Interactive3DCardEffect;
-
-//style={{transform: 'perspective(200px) rotateX(-25deg)'}}
