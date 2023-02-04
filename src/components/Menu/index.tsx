@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { faCircleDot, faAddressCard } from '@fortawesome/free-regular-svg-icons';
-import { faBriefcase, faBrush, faSpinner, faGear } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faBrush, faSpinner, faGear, faBarsProgress } from '@fortawesome/free-solid-svg-icons';
 
 import BurgerMenu from '../Buttons/BurgerMenu';
 import MenuItem from './MenuItem';
@@ -14,6 +14,7 @@ import styles from './style.module.scss';
 const menuListData = [
   { title: 'Buttons', path: Path.Buttons, icon: faCircleDot },
   { title: 'Spinners', path: Path.Spinners, icon: faSpinner },
+  { title: 'Progress', path: Path.Progress, icon: faBarsProgress },
   { title: 'Cards', path: Path.Cards, icon: faAddressCard },
   { title: 'Properties', path: Path.Properties, icon: faGear },
   { title: 'Gradients', path: Path.Gradients, icon: faBrush },

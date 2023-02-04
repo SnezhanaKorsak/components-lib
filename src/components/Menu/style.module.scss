@@ -18,7 +18,7 @@
       padding: 0;
 
       li {
-        padding: 5px 0 5px 15px;
+        padding: 5px 15px 5px 15px;
         display: block;
         height: 40px;
         white-space: nowrap;
@@ -34,9 +34,18 @@
           color: $white;
         }
 
-        .icon {
-          margin-right: 25px;
+        .container {
+          display: flex;
+
+
+          .iconWrapper {
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            margin-right: 25px;
+          }
         }
+
       }
     }
   }

@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import ButtonsPage from '../Buttons';
 import PropertiesPage from '../Properties';
 import SpinnersPage from '../Spinners';
+import ProgressPage from '../Progress';
 import GradientPage from '../GradientPage';
 import CardsPage from '../Cards';
 import OtherPage from '../Other';
@@ -16,6 +17,7 @@ const RoutesSwitch = () => {
       <Route path="/" element={<ButtonsPage/>}/>
       <Route path={Path.Buttons} element={<ButtonsPage/>}/>
       <Route path={Path.Spinners} element={<SpinnersPage/>}/>
+      <Route path={Path.Progress} element={<ProgressPage/>}/>
       <Route path={Path.Cards} element={<CardsPage/>}/>
       <Route path={Path.Properties} element={<PropertiesPage/>}/>
       <Route path={Path.Gradients} element={<GradientPage/>}/>

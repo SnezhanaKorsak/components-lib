@@ -14,8 +14,13 @@ type MenuItemProps = {
 const MenuItem: React.FC<MenuItemProps> = ({ title, path, icon }) => {
   return (
     <NavLink to={path}>
-      <FontAwesomeIcon className={styles.icon} icon={icon}/>
-      {title}
+      <div className={styles.container}>
+        <div className={styles.iconWrapper}>
+          <FontAwesomeIcon className={styles.icon} icon={icon}/>
+        </div>
+
+        {title}
+      </div>
     </NavLink>
   );
 };
