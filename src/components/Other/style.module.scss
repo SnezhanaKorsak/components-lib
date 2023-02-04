@@ -1,0 +1,9 @@
+@import '../../sass/mixins';
+
+.container {
+  @include container;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
