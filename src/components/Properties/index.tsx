@@ -1,10 +1,11 @@
 import React from 'react';
 
 import LineClamp from './LineClamp';
-
-import styles from '../Buttons/style.module.scss';
 import ShapeOutside from './ShapeOutside';
 import TextStroke from './TextStroke';
+import SelectionPseudoElement from './SelectionPseudoElement'
+
+import styles from './style.module.scss';
 
 const PropertiesPage = () => {
 
@@ -12,6 +13,7 @@ const PropertiesPage = () => {
     <LineClamp/>
     <ShapeOutside/>
     <TextStroke/>
+    <SelectionPseudoElement/>
   </div>
 }
 

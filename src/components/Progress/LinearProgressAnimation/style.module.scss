@@ -1,0 +1,41 @@
+@import '../../../sass/variables';
+
+@keyframes progress {
+  from {
+    left:  -5%;
+    width: 5%;
+  }
+  to {
+    left:  105%;
+    width: 75%;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+
+  h2 {
+    font-family: $headerFont;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+
+  .progress {
+    width: 290px;
+    height: 4px;
+    background-color: #005b68;
+    position: relative;
+    overflow: hidden;
+
+    .inner {
+      height: 100%;
+      background-color: #5fe9fb;
+      position: absolute;
+      animation: progress 2s infinite;
+    }
+  }
+}
