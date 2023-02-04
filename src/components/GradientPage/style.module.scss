@@ -4,20 +4,34 @@
 .container {
   @include container;
 
- .info {
-   display: flex;
+  .info {
+    display: flex;
 
-   select {
-     width: 150px;
-     outline: none;
-     margin-right: 15px;
-   }
+    select {
+      width: 150px;
+      outline: none;
+      margin-right: 15px;
+    }
 
-   .description {
-     width: auto;
-     padding: 0 5px;
-     background-color: white;
-     color: #111111;
-   }
- }
+    .description {
+      width: auto;
+      padding: 0 5px;
+      background-color: white;
+      color: #111111;
+    }
+  }
+
+  &, .movingGradient {
+    animation: movingGradient 5s linear infinite alternate;
+    background-size: 200% 200%;
+  }
+}
+
+@keyframes movingGradient {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
