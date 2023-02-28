@@ -1,0 +1,57 @@
+@import '../../../sass/variables';
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper {
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+
+  h2 {
+    font-family: $headerFont;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .switch {
+    .track {
+      display: inline-block;
+      width: 48px;
+      height: 24px;
+      border-radius: 12px;
+      background: $white;
+      transition: background 1000ms;
+
+      .thumb {
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        background-color: $pure;
+        border-radius: 50%;
+        transition: transform 400ms;
+      }
+    }
+
+    input:checked + .track {
+      background: #d26495;
+
+      .thumb {
+        transform: translateX(24px);
+      }
+    }
+  }
+}
+
