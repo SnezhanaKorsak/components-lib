@@ -1,0 +1,87 @@
+@import '../../../sass/variables';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-family: $headerFont;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    width: 220px;
+    height: 200px;
+    color: $white;
+    margin: 1em;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1.5em;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      background: #171717;
+      width: 100%;
+      height: 40%;
+      z-index: -10;
+      border-radius: 15px 15px 0 0;
+      transition: all 0.4s;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &:hover::before {
+      transform: translateY(-20px);
+    }
+
+    &::after {
+      bottom: 10px;
+      height: 60%;
+      border-radius: 0 0 15px 15px;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      background: #da0037;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 1.5em;
+    }
+
+    &:hover .icon {
+      box-shadow: 0 0 10px red;
+    }
+
+    p {
+      margin: 0.5em 0;
+      font-size: 0.8em;
+      display: none;
+      opacity: 0;
+      transition: all 0.4s;
+    }
+
+    &:hover p {
+      display: block;
+      opacity: 1;
+    }
+
+    h4 {
+      margin-top: 0.5em;
+    }
+  }
+}
+
