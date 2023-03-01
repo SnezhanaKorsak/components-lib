@@ -1,0 +1,22 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins';
+
+.header {
+  @include header;
+}
+
+.content {
+  @include content;;
+
+  .description {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .example::first-letter {
+    font-size: 3rem;
+    font-weight: 700;
+    float: left;
+    margin-right: 10px;
+  }
+}
