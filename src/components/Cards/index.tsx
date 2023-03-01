@@ -4,6 +4,7 @@ import Interactive3DCardEffect from './Interactive3DCardEffect';
 import GlassEffect from './GlassEffect';
 import ProfileCard from './ProfileCard';
 import ProfileCardTwo from './ProfileCardTwo';
+import FoodCard from './FoodCard';
 
 import styles from './style.module.scss';
 
@@ -15,6 +16,7 @@ const CardsPage = () => {
       <GlassEffect/>
       <ProfileCard/>
       <ProfileCardTwo/>
+      <FoodCard/>
     </div>
   );
 };
