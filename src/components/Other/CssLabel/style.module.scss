@@ -1,0 +1,23 @@
+@import '../../../sass/variables';
+
+.container {
+
+
+  h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    background-color: $white;
+    padding: 8px 24px 8px 12px;
+    font-size: 26px;
+    clip-path: polygon(
+    0 0,
+    50% 0,
+    calc(45% - 12px) 100%,
+    0 100%
+    );
+    color: black;
+  }
+}

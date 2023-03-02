@@ -2,6 +2,7 @@ import React from 'react';
 import TypingEffect from './TypingEffect';
 import WaveEffect from './WaveEffect';
 import NotificationIcon from './NotificationIcon';
+import CssLabel from './CssLabel';
 
 import styles from './style.module.scss';
 
@@ -11,6 +12,7 @@ const OtherPage = () => {
       <WaveEffect/>
       <TypingEffect/>
       <NotificationIcon/>
+      <CssLabel/>
     </div>
   );
 };
