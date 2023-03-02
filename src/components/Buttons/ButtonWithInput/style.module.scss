@@ -1,0 +1,40 @@
+@import '../../../sass/variables';
+
+.wrapper {
+  position: relative;
+  height: 100px;
+  margin-bottom: 20px;
+
+  h2 {
+    font-family: $headerFont;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  .search {
+    height: 36px;
+    width: 36px;
+    border: none;
+    border-radius: 18px;
+    padding-left: 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    transition-property: width, border-radius, box-shadow;
+    transition-duration: 300ms;
+
+    &:focus {
+      width: 200px;
+      border-radius: 4px;
+      box-shadow: 0 0 0 2px #a43afa;
+      background-position: 10px;
+      outline: none;
+      font-size: 16px;
+      cursor: auto;
+    }
+  }
+}
+
+
+
