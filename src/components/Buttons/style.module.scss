@@ -5,4 +5,12 @@
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  row-gap: 50px;
+
+  .block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }

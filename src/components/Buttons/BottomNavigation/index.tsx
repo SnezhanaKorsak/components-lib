@@ -15,13 +15,16 @@ const BottomNavigation = () => {
   return (
     <div className={styles.wrapper}>
       <h2>Bottom Navigation</h2>
-      <nav className={styles.bottomNav}>
-        {icons.map((icon, index) =>
-          <div className={`${styles.navItem} ${index === activeItem ? styles.active : ''}`}
-               onClick={() => onClickHandler(index)}>
-            <FontAwesomeIcon icon={icon}/>
-          </div>)}
-      </nav>
+
+      <div className={styles.container}>
+        <nav className={styles.bottomNav}>
+          {icons.map((icon, index) =>
+            <div className={`${styles.navItem} ${index === activeItem ? styles.active : ''}`}
+                 onClick={() => onClickHandler(index)}>
+              <FontAwesomeIcon icon={icon}/>
+            </div>)}
+        </nav>
+      </div>
     </div>
   );
 };
