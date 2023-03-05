@@ -12,6 +12,7 @@
   }
 
   .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +22,7 @@
 
     .lock {
       position: absolute;
-      bottom: 5px;
+      bottom: 35px;
       width: 70px;
       height: 70px;
       border-radius: 40px;
@@ -30,11 +31,10 @@
 
       svg circle {
         stroke-dasharray: 150;
-        transition: all 0.8s;
+        transition: all 0.5s;
         stroke-linecap: round;
         stroke: #2dfc52;
       }
-
 
     }
     &.closed svg circle {

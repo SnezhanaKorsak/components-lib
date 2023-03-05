@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import styles from './style.module.scss'
 
 const LockAnimation = () => {
-  const [closed, setClosed] = useState(false)
+  const [closed, setClosed] = useState(true)
 
   const onClickHandler = () => setClosed(!closed)
 
