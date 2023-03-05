@@ -6,6 +6,7 @@ import SocialMediaIconsHoverEffect from './SocialMediaIconsHoverEffect';
 import ButtonsWithTooltip from './ButtonsWithTooltip';
 import ButtonWithInput from './ButtonWithInput';
 import AnimatedCircularNavigation from './AnimatedCircularNavigation';
+import DotsMenu from './DotsMenu';
 
 import styles from './style.module.scss';
 
@@ -16,12 +17,14 @@ const ButtonsPage = () => {
       <BottomNavigation/>
       <ButtonsGroupHoverEffect/>
       <SocialMediaIconsHoverEffect/>
+      <DotsMenu/>
+      <AnimatedCircularNavigation/>
+
       <div className={styles.block}>
         <ButtonsWithTooltip/>
         <ButtonWithInput/>
       </div>
 
-      <AnimatedCircularNavigation/>
     </div>
   );
 };
