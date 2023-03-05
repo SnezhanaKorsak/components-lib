@@ -4,6 +4,7 @@ import WaveEffect from './WaveEffect';
 import NotificationIcon from './NotificationIcon';
 import CssLabel from './CssLabel';
 import AnimatedBlob from './AnimatedBlob';
+import LockAnimation from './LockAnimation';
 
 import styles from './style.module.scss';
 
@@ -15,6 +16,7 @@ const OtherPage = () => {
       <NotificationIcon/>
       <CssLabel/>
       <AnimatedBlob/>
+      <LockAnimation/>
     </div>
   );
 };
