@@ -6,13 +6,22 @@
   }
 }
 
-.text {
-  height: 30px;
-  width: 13ch; // 1ch is width of one character
-  font-family: monospace; // works only with monospace fonts
-  overflow: hidden;
-  border-right: 1px solid;
-  animation: typing 2s steps(13) infinite;
-  font-size: 24px;
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px;
+
+  .text {
+    height: 30px;
+    width: 13ch; // 1ch is width of one character
+    font-family: monospace; // works only with monospace fonts
+    overflow: hidden;
+    border-right: 1px solid;
+    animation: typing 2s steps(13) infinite;
+    font-size: 24px;
+  }
 }
+
+
 

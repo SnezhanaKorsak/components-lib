@@ -3,6 +3,7 @@ import TypingEffect from './TypingEffect';
 import WaveEffect from './WaveEffect';
 import NotificationIcon from './NotificationIcon';
 import CssLabel from './CssLabel';
+import AnimatedBlob from './AnimatedBlob';
 
 import styles from './style.module.scss';
 
@@ -13,6 +14,7 @@ const OtherPage = () => {
       <TypingEffect/>
       <NotificationIcon/>
       <CssLabel/>
+      <AnimatedBlob/>
     </div>
   );
 };
