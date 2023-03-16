@@ -13,18 +13,16 @@ import styles from './style.module.scss';
 const ButtonsPage = () => {
   return (
     <div className={styles.container}>
+      <DotsMenu/>
+      <AnimatedCircularNavigation/>
       <SocialButtonsWithPopupEffect/>
       <BottomNavigation/>
       <ButtonsGroupHoverEffect/>
       <SocialMediaIconsHoverEffect/>
-      <DotsMenu/>
-      <AnimatedCircularNavigation/>
-
       <div className={styles.block}>
         <ButtonsWithTooltip/>
         <ButtonWithInput/>
       </div>
-
     </div>
   );
 };

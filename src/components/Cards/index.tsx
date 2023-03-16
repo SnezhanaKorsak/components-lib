@@ -6,6 +6,7 @@ import ProfileCard from './ProfileCard';
 import ProfileCardTwo from './ProfileCardTwo';
 import FoodCard from './FoodCard';
 import ScrollToTop from './ScrollToTop';
+import ProfileCardAnimated from './ProfileCardAnimated';
 
 import styles from './style.module.scss';
 
@@ -17,8 +18,9 @@ const CardsPage = () => {
       <GlassEffect/>
       <ProfileCard/>
       <ProfileCardTwo/>
-      <FoodCard/>
       <ScrollToTop/>
+      <ProfileCardAnimated/>
+      <FoodCard/>
     </div>
   );
 };
